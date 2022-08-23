@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Unit Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div> 
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+
+    <script src="greet.js" charset="utf-8"></script>
+    <script src="greet.tests.js" charset="utf-8"></script>
+    <script src="isFromBellville.js" charset="utf-8"></script>
+    <script src="isFromBellville.tests.js" charset="utf-8"></script>
+    <script src="isFromCapeTown.js" charset="utf-8"></script>
+    <script src="isFromCapeTown.tests.js" charset="utf-8"></script>
+    <script src="isFromGauteng.js" charset="utf-8"></script>
+    <script src="isFromGauteng.tests.js" charset="utf-8"></script>
+    <script src="isFromLimpopo.js" charset="utf-8"></script>
+    <script src="isFromLimpopo.tests.js" charset="utf-8"></script>
+    <script src="isFrom.js" charset="utf-8"></script>
+    <script src="isFrom.tests.js" charset="utf-8"></script>
+    <script src="regCheck.js" charset="utf-8"></script>
+    <script src="regCheck.tests.js" charset="utf-8"></script>
+    <script src="countRegNumber.js" charset="utf-8"></script>
+    <script src="countRegNumber.tests.js" charset="utf-8"></script>
+    <script src="isDayName.js" charset="utf-8"></script>
+    <script src="isDayName.tests.js" charset="utf-8"></script>
+    <script src="isWeekday.js" charset="utf-8"></script>
+    <script src="isWeekday.tests.js" charset="utf-8"></script>
+    <script src="getDay.js" charset="utf-8"></script>
+    <script src="getDay.tests.js" charset="utf-8"></script>
+    <script src="yearsAgo.js" charset="utf-8"></script>
+    <script src="yearsAgo.tests.js" charset="utf-8"></script>
+    <script src="sameWeekday.js" charset="utf-8"></script>
+    <script src="sameWeekday.tests.js" charset="utf-8"></script>
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>
